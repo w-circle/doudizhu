@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斗地主之狐妖小红娘</title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/comm.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/animate.js"></script>
+</head>
+
+
+<body>
+    <div class="bg">
+        <!-- 顶部全部牌组start -->
+        <div class="top">
+            <ul class="all_poker">
+                <li class="back"></li>
+            </ul>
+        </div>
+        <!-- 顶部全部牌组end -->
+
+        <!-- 内容start -->
+        <div class="mid">
+            <!-- 左边玩家 -->
+            <div class="mid_left">
+                <!-- 用户个人信息 -->
+                <div class="mid_left_top">
+                    <!-- 头像 -->
+                    <div class="mid_left_photo"></div>
+                    <div class="headwear"></div>
+                    <!-- 用户名 -->
+                    <span></span>
+                    <!-- 钱 -->
+                    <p></p>
+                    <!-- 人物 -->
+                    <img class="person1" src="../images/character1.png"></img>
+                </div>
+                <!-- 牌及按钮 -->
+                <div class="mid_left_bottom">
+                    <!-- 牌 -->
+                    <div class="pokerBox1">
+                        <ul class="play_1"></ul>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="playButton_1">
+                        <div class="get_boss">
+                            <button class="get">抢地主</button>
+                            <button class="cancel">不抢</button>
+                        </div>
+                        <div class="play_btn">
+                            <button class="play">出牌</button>
+                            <button class="tips">提示</button>
+                            <button class="cancel">过牌</button>
+                        </div>
+                        <div class="clockBox">
+                            <div class="clock"><span class="times"></span></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <!-- 中间玩家 -->
+            <div class="mid_among">
+                <!-- 发牌区域 -->
+                <div class="upperBox">
+                    <ul class="upper"></ul>
+                </div>
+                <!-- 中间玩家的内容区域 -->
+                <div class="lower">
+                    <!-- 按钮 -->
+                    <div class="playButton_2">
+                        <div class="get_boss">
+                            <button class="get">抢地主</button>
+                            <button class="cancel">不抢</button>
+                        </div>
+                        <div class="play_btn">
+                            <button class="play">出牌</button>
+                            <button class="tips">提示</button>
+                            <button class="cancel">过牌</button>
+                        </div>
+                        <!-- 限时发牌 -->
+                        <div class="clockBox">
+                            <div class="clock"><span class="times"></span></div>
+                        </div>
+                    </div>
+                    <div class="pokerBox"> 
+                        <div class="information">
+                            <!-- 头像 -->
+                            <div class="mid_among_photo"></div>
+                            <div class="headwear"></div>
+                            <!-- 用户名 -->
+                            <span></span>
+                            <!-- 钱 -->
+                            <p></p>
+                            <img class="person2" src="../images/character2.png"></img>
+                        </div>
+                        <!-- 玩家手中的牌 -->
+                        <ul class="play_2"></ul>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- 右边玩家 -->
+            <div class="mid_right">
+                <!-- 用户个人信息 -->
+                <div class="mid_right_top">
+                    <!-- 头像 -->
+                    <div class="mid_right_photo"></div>
+                    <div class="headwear"></div>
+                    <!-- 用户名 -->
+                    <p></p>
+                    <!-- 钱 -->
+                    <p></p>
+                    <!-- 人物 -->
+                    <img class="person3" src="../images/character3.png"></img>
+                </div>
+                <!-- 牌级按钮 -->
+                <div class="mid_right_bottom">
+                    <!-- 牌 -->
+                    <div class="pokerBox3">
+                        <ul class="play_3"></ul>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="playButton_3">
+                        <div class="get_boss">
+                            <button class="get">抢地主</button>
+                            <button class="cancel">不抢</button>
+                        </div>
+                        <div class="play_btn">
+                            <button class="cancel">过牌</button>
+                            <button class="tips">提示</button>
+                            <button class="play">出牌</button>
+                        </div>
+                        <div class="clockBox">
+                            <div class="clock"><span class="times"></span></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- 内容end -->
+    </div>
+</body>
+
+</html>

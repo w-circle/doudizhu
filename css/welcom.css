@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei;
+}
+body{
+    overflow: hidden;
+    background-color: orange;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.content{
+    margin: 0 auto;
+}
+video{
+    position: fixed;
+    margin: 0px auto;
+    z-index: -999;
+    /*加滤镜*/
+    /* 背景模糊设置 */
+    filter: blur(0.4px); 
+    opacity: 0.95;
+}
+.startBox{
+    position: relative;
+    width: 100%;
+    height: 20px; 
+    top: 372px;
+}
+.progressSmallBox{
+    width: 100%;
+    height: 100%;
+     /* opacity: 0.1; */
+    /* filter: blur(1px);  */
+    /* filter:grayscale(18%); */
+}
+.start{
+    display: block;
+    width: 320px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    background:url(../images/startBefore.png);
+    background-size: 100% 100%;
+    filter:grayscale(0);
+    cursor: pointer;
+    pointer-events:none;
+}
+.title{
+    display: inline-block;
+    margin-left: 155px;
+}
+.progressBox{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.progressPerson{
+    display: block;
+    width: 55px;
+    margin-left: -3px;
+    opacity: 0;
+}
+.progress{
+    background: orangered;
+    color: white;
+    width: 1px;
+    height: 9px;
+    opacity: 0;
+}
+.userNoticeBox{
+    position:absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0px;
+}
+.userNotice{
+    width: 600px;   
+    height: 384px;
+    margin: 145px auto 0;
+    background: url(../images/noticeBg.png);
+    background-size: 100% 100%;
+    opacity: 0.94;
+}
+.message{
+    position: relative;
+    width: 368px;
+    height: 236px;
+    top: 70px;
+    left: 126px;
+}
+.messageTitle{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'KaiTi_GB2312';
+}
+.MessageContent{
+    line-height: 45px;
+    font-size: 16px;
+    font-family: 'KaiTi_GB2312';
+}
+#confirm{
+    display: block;
+    font-size: 18px;
+    color: black;
+    margin: 20px 0 0 50%;
+    cursor: pointer;
+}
+#confirm:hover{
+    color: red;
+}
+
+/* 音乐部件的样式 */
+.playMusic {
+    width: 77px;
+    height: auto;
+    float: right;
+    margin: 0px 10px;
+}
+
+.playMusic .mp3 {
+    display: block;
+    width: 61px;
+    height: 61px;
+    position: relative;
+}
+
+.playMusic .mp3::before {
+    content: '';
+    background: url(../images/musicA.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(0.8);
+}
+
+.playMusic .mp3::after {
+    content: '';
+    background: url(../images/musicB.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 40px;
+    top: -15px;
+    transform: scale(0.8) rotate(-45deg);
+}
+
+.playMusic .mp3.play::after {
+    left: 25px;
+    top: -9px;
+    transform: scale(0.8) rotate(-15deg);
+}
+
+.playMusic .mp3.play::before {
+    animation: xuanzhuan 3s linear infinite;
+}
+
+@keyframes xuanzhuan {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

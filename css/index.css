@@ -1,0 +1,831 @@
+body{
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+.bg{
+    margin: 0 auto;
+}
+.mid_right_top p,
+.information span,
+.information p,
+.mid_left_top span,
+.mid_left_top p{
+    font-size:12px;
+    font-weight: 900;
+    color: white;
+}
+/* 第一层样式start */
+.bg .top{
+    position: relative;
+    width: 100%;
+    height: 23.07%;
+}
+.bg .top .all_poker{
+    width: 125px;
+    height: 175px;
+    margin: 0 auto;
+    padding: 12px 0 0 0;
+    position: relative;
+    border-radius: 5px;
+}
+
+.all_poker li {
+    position: absolute;
+}
+
+.all_poker .back {
+    background: url(../images/14.png) no-repeat;
+    background-position: -66px -187px;
+    width: 124px;
+    height: 174px;
+    position: absolute;
+    transform:scale(0.80)
+}
+.back{
+    transform-origin: 50% 100%;
+}
+.bossMask{
+    position:absolute;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0px;
+    left: 0px;
+    z-index:20;
+}
+/* 第一层样式end */
+
+.bg .mid{
+    width: 100%;
+    height: 76.93%;
+}
+/* 第二层左边部分样式start */
+.bg .mid .mid_left{
+    width: 24%;
+    height: 100%;
+    float: left;
+}
+.bg .mid .mid_left .mid_left_top,
+.bg .mid .mid_right .mid_right_top{
+    position: relative;
+    width: 100%;
+    height: 12%;
+}
+.bg .mid .mid_left_top .headwear,
+.bg .mid .mid_right_top .headwear,
+.information .headwear{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/timg.png);
+    background-size: 100% 100%;
+    transform: rotate(-15deg);
+    opacity: 0;
+}
+.bg .mid .mid_left_top .headwear{
+    left:-8px;
+    top:-34px;
+}
+.bg .mid .mid_right_top .headwear{
+    transform: rotate(15deg);
+    right:-10px;
+    top:-38px;
+}
+.information .headwear{
+    top: -31px;
+    left: -6px;
+}
+.bg .mid .mid_left .mid_left_top .mid_left_photo,
+.bg .mid .mid_right .mid_right_top .mid_right_photo,
+.mid_among .lower .pokerBox .information .mid_among_photo{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.bg .mid .mid_right .mid_right_top .mid_right_photo{
+    float: right;
+}
+.bg .mid .mid_left .mid_left_top .person1,
+.bg .mid .mid_right .mid_right_top .person3{
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 143px;
+    top: -136px;
+}
+.bg .mid .mid_left .mid_left_top .person1{
+    right: 30px;
+    transform: scale(0.85);
+}
+.bg .mid .mid_right .mid_right_top .person3{
+    left: 30px;
+    transform: scale(0.85);
+}
+.bg .mid .mid_left .mid_left_bottom,
+.bg .mid .mid_right .mid_right_bottom{
+    width: 100%;
+    height: 88%;
+    clear: both;
+}
+.bg .mid .mid_left .mid_left_bottom .pokerBox1,
+.bg .mid .mid_right .mid_right_bottom .pokerBox3{
+    position: relative;
+    width: 51%;
+    height: 100%;
+    float: left;
+}
+.bg .mid .mid_right .mid_right_bottom .pokerBox3{
+    float: right;
+}
+.bg .mid .mid_left .mid_left_bottom .play_1{
+    position: absolute;
+}
+.bg .mid .mid_left .mid_left_bottom .play_1 li{
+    position: absolute;
+}
+.bg .mid .mid_left .mid_left_bottom .playButton_1,
+.bg .mid .mid_right .mid_right_bottom .playButton_3{
+    position: relative;
+    width: 47%;
+    height: 100%;
+    float: right;
+}
+.playButton_1 .get_boss,
+.playButton_3 .get_boss{
+    display: none;
+}
+.playButton_1 .get_boss .get,
+.playButton_1 .play_btn .play,
+.playButton_1 .play_btn .tips,
+.playButton_3 .get_boss .get,
+.playButton_3 .play_btn .play,
+.playButton_3 .play_btn .tips{
+    display: block;
+    position: absolute;
+    width:73px;
+    height: 38px;
+    color: white;
+    font-weight: 900;
+    top: 45%;
+    border: none;
+    outline: none;
+    background: url(../images/btnBefore.png);
+    background-size: 100% 100%;
+}
+.playButton_3 .get_boss .get,
+.playButton_3 .play_btn .play,
+.playButton_3 .play_btn .tips,
+.playButton_3 .get_boss .cancel,
+.playButton_3 .play_btn .cancel{
+    right: 45px;
+    transform: scale(0.95);
+}
+.playButton_1 .play_btn .play,
+.playButton_3 .play_btn .play{
+    top: 29%;
+}
+.playButton_1 .play_btn .tips,
+.playButton_3 .play_btn .tips{
+    top: 49%;
+}
+.playButton_1 .get_boss .cancel,
+.playButton_1 .play_btn .cancel,
+.playButton_3 .get_boss .cancel,
+.playButton_3 .play_btn .cancel{
+    display: block;
+    position: absolute;
+    width:73px;
+    height: 38px;
+    color: white;
+    font-weight: 900;
+    top:34%;
+    border: none;
+    outline: none;
+    background: url(../images/btnBefore.png);
+    background-size: 100% 100%;
+}
+.playButton_3 .play_btn .cancel,
+.playButton_1 .play_btn .cancel{
+    top: 39%;
+}
+.playButton_1 .get_boss .get,
+.playButton_1 .play_btn .play,
+.playButton_1 .play_btn .tips,
+.playButton_1 .get_boss .cancel,
+.playButton_1 .play_btn .cancel{
+    left: 18%;
+    transform: scale(0.95);
+}
+.playButton_1 .play_btn, 
+.playButton_3 .play_btn{
+    display: none;
+}
+.clockBox{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+.clockBox .clock{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 30px;
+    left: 49px;
+    text-align: center;
+    background: url(../images/clock.png);
+    background-size: 100% 100%;
+    transform: rotate(22deg);
+}
+.clockBox .clock .times{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 25px auto;
+}
+.clockBox{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mid_among .clockBox{
+    position: absolute;
+    right:  0px;
+}
+.mid_among .clockBox .clock{
+    top: 10px;
+    left:20px;
+}
+.clockBox .clock .times{
+    margin: 29% auto 0;
+}
+
+/* 第二层左边部分样式end */
+
+/* 第二层的中间部分样式start */
+.bg .mid .mid_among{
+    width: 52%;
+    height: 100%;
+    float: left;
+}
+.bg .mid .mid_among .upperBox{
+    width: 100%;
+    height: 55%;
+}
+.bg .mid .mid_among .upperBox{
+    position: relative;
+}
+
+.mid_among .upperBox .specialBox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align:center
+}
+.mid_among .upperBox .specialBox .special{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.mid_among .upperBox .specialBox  .wrongWrod{
+    position:absolute;
+    color:white;
+    font-size:18px;
+    font-weight:900;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+.bg .mid .mid_among .upperBox .upper{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    margin:0 auto;
+    width:80%;
+    height:100%;
+    text-align:center;
+}
+.bg .mid .mid_among .upperBox .upper li{
+    right:0;
+    top:74px;
+    bottom:0;
+    left:0;
+    margin:0 auto;
+}
+.bg .mid .mid_among .lower{
+    width: 100%;
+    height: 45%;
+}
+.mid_among .lower .playButton_2{
+    position: relative;
+    width: 100%;
+    height: 22%;
+}
+.mid_among .lower .playButton_2 .get_boss,
+.mid_among .lower .playButton_2 .play_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.mid_among .lower .playButton_2 .get_boss button,
+.mid_among .lower .playButton_2 .play_btn button{
+    display: inline;
+    width:73px;
+    height: 38px;
+    color: white;
+    font-weight: 900;
+    background: url(../images/btnBefore.png);
+    background-size: 100% 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+.mid_among .lower .playButton_2 .get_boss{
+    display: none;
+}
+.mid_among .lower .playButton_2 .play_btn{
+    display: none;
+}
+.mid_among .lower .pokerBox{
+    width: 100%;
+    height: 78%;
+}
+.mid_among .lower .pokerBox .information{
+    position: relative;
+    width: 17%;
+    height: 100%;
+    float: left;
+}
+
+.mid_among .lower .pokerBox .play_2{
+    position: relative;
+    width: 83%;
+    height: 100%;
+    float: right;
+    top: 13%;
+}
+.mid_among .lower .pokerBox .play_2 li{
+    position: absolute;
+    bottom: 0;
+}
+.mid_among .lower .pokerBox .information .person2{
+    position: absolute;
+    display: block;
+    clear: both;
+    width: 110px;
+    height: 144px;
+    transform: scale(0.85);
+    bottom: 0;
+}
+/* 第二层的中间部分样式end */
+
+/* 第二层右边部分样式start */
+.bg .mid .mid_right{
+    width: 24%;
+    height: 100%;
+    float: right;
+}
+.bg .mid .mid_right .mid_right_top .mid_left_photo{
+    float: right;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+.bg .mid .mid_right .mid_right_top p,
+.bg .mid .mid_right .mid_right_top span{
+    text-align: right;
+}
+.bg .mid .mid_right .mid_right_bottom .playButton_3{
+    float: left;
+}
+.bg .mid .mid_right .mid_right_bottom .play_3{
+    position: absolute;
+    right:  153px;
+}
+.bg .mid .mid_right .mid_right_bottom .play_3 li{
+    position: absolute;
+}
+/* 第二层右边部分样式end */
+
+/* 牌被选中之后的样式start */
+.play_1 .on {
+    left: 30px;
+}
+
+.play_2 .on {
+    top: -15px;
+}
+
+.play_3 .on {
+    left: -30px;
+}
+/* 牌被选中之后的样式end */
+
+/* 抢地主动画的css样式start */
+.bg .bossAnimateBox{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    z-index: 100;
+    margin: -50px 0px 0px -50px;
+    display: none;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg) rotateY(30deg);
+}
+
+.bg .bossAnimateBox  li {
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.top1 {
+    background:no-repeat url(../images/bossTop.jpg) center;
+    background-size:100% 100%;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background:no-repeat url(../images/bossBottom.jpg) center;
+    background-size:100% 100%;
+    transform: rotateX(-90deg) translateZ(50px);
+    animation-fill-mode: forwards;
+}
+
+.left {
+    background:no-repeat url(../images/bossLeft.jpg) center;
+    background-size:100% 100%;
+    transform-origin: 50% 100%;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.right {
+    background:no-repeat url(../images/bossRight.jpeg) center;
+    background-size:100% 100%;
+    transform-origin: 50% 100%;
+    transform: rotateY(90deg) translateZ(50px);
+    
+}
+
+.behind {
+    background:no-repeat url(../images/bossBehind.jpg) center;
+    background-size:100% 100%;
+    transform-origin: 50% 100%;
+    transform: translateZ(-50px);
+}
+
+.front {
+    background:no-repeat url(../images/bossFront.jpg) center;
+    background-size:100% 100%;
+    transform-origin: 50% 100%;
+    transform: translateZ(50px);
+}
+.boss_head{
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:56%;
+    left: 53%;
+    z-index: 100;
+    margin: -50px 0px 0px -50px;
+    background: url(../images/timg.png) no-repeat;
+    transition: all 2s;
+    background-size: 100% 100%;
+    opacity: 0;
+    /* transform:rotateX(-30deg) rotateY(30deg); */
+}
+.boss_animation{
+    display: none; 
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top:200px;
+    left:100%;
+    bottom: 0px;
+    z-index: 200;
+
+}
+@keyframes li_run{
+        0%{
+            box-shadow: 0px 0px 200px 5px yellow;
+        }
+    
+        100% {
+            box-shadow: 0px 0px 100px 10px yellow;
+        }
+ }
+@keyframes boss_head_run{
+    0%{
+      opacity: 0;
+    }100%{
+      opacity: 1;
+    }
+}
+@keyframes top_run{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        display: none;
+    }
+}
+@keyframes bottom_run{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        display: none;
+    }
+}
+@keyframes left_run{
+    0%{
+        opacity:1;
+        transform: rotateY(-90deg) translateZ(50px);
+    }
+    100%{
+       transform: rotateY(-90deg) translateZ(50px) rotateX(-90deg);
+        opacity:0;
+        display: none;
+    }
+}
+@keyframes right_run{
+    0%{
+        opacity:1;
+        transform: rotateY(90deg) translateZ(50px);
+    }
+    100%{
+        transform: rotateY(90deg) translateZ(50px) rotateX(-90deg);
+        opacity:0;
+        display: none;
+    }
+}
+@keyframes front_run{
+    0%{
+        transform: translateZ(50px);
+        opacity:1;
+    }
+    100%{
+        transform: translateZ(50px) rotateX(-90deg);
+        opacity:0;
+        display: none;
+    }
+}
+@keyframes behind_run{
+    0%{
+        transform: translateZ(-50px);
+        opacity:1;
+    }
+    100%{
+        transform: translateZ(-50px) rotateX(90deg);
+        opacity:0;
+        display: none;
+
+    }
+}
+
+.bg  .play_video{
+    position: fixed;
+    top:0px;
+    margin: 0px auto;
+    z-index: -999;
+    /*加滤镜*/
+    /* 背景模糊设置 */
+    filter: blur(0.4px); 
+    object-fit:fill;
+    opacity: 0.95;
+}
+
+/* 抢地主动画的css样式end */
+
+
+/* 音乐部件的样式start */
+.play_audios {
+    width: 71px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.play_audios .bamusic {
+    display: block;
+    width: 61px;
+    height: 61px;
+    position: relative;
+}
+
+.play_audios .bamusic::before {
+    content: '';
+    background: url(../images/musicA.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(0.8);
+}
+
+.play_audios .bamusic::after {
+    content: '';
+    background: url(../images/musicB.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 40px;
+    top: -15px;
+    transform: scale(0.8) rotate(-45deg);
+}
+
+.play_audios .bamusic.play::after {
+    left: 25px;
+    top: -9px;
+    transform: scale(0.8) rotate(-15deg);
+}
+
+.play_audios .bamusic.play::before {
+    animation: xuanzhuan 3s linear infinite;
+}
+
+@keyframes xuanzhuan {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* 音乐部件的样式end */
+
+/* 钱的样式start */
+.information p img {
+    width: 20px;
+    height: 22px;
+    vertical-align: middle;
+    /* margin: 5px 5px; */
+}
+
+.mid_right_top p img {
+    width: 20px;
+    height: 22px;
+    vertical-align: middle;
+    margin: 5px 5px;
+}
+
+.mid_left_top p img {
+    width: 20px;
+    height: 22px;
+    vertical-align: middle;
+    margin: 5px 5px;
+}
+/* 钱的样式end */
+
+
+/* 结算页面start */
+.box1{
+    position: absolute;
+    z-index:99;
+}
+.box_img{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    right:0;
+    background-image: url(../images/settlement.png);
+    background-size: 100%;
+}
+.box_img p{
+    position: absolute;
+    top: 160px;
+    left: 186px;
+    font-size: 43px;
+}
+.box_img p img{
+    width: 60%;
+    height: 90%;
+}
+.box_table{
+    position: absolute;
+    color: aliceblue;
+    font-weight: 900;
+    border-collapse:separate; 
+    border-spacing:0px 10px;
+    bottom: -33px;
+    top:59%;
+    right:9%;
+}
+.box_table tr th{
+    width: 100px;
+}
+.box_table tr td{
+   text-align: center;
+}
+.box_table img {
+    width: 20px;
+}
+
+.box .exit,
+.box .playAgain{
+    width:73px;
+    height:38px;
+    line-height:38px;
+    position: absolute;
+    color:white;
+    font-weight:600;
+    font-size: 15px;
+    text-align: center;
+    background: url(../images/btnAfter.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index:999;
+}
+.box .playAgain{
+    left: 44%;
+    bottom: -22%;
+}
+.box .exit{
+    left: 68%;
+    bottom: -22%;
+}
+
+.box .exit:hover{
+    width:77px;
+    height:42px;
+}
+
+
+/* 结算页面end */
+
+/*特殊牌型的样式strat*/
+#divFly{
+    z-index:999
+}
+.glowworm{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.bg .planeBox{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    top:0px;
+    left : 0px;
+    background : url(../images/bg1.jpg);
+    background-size:100% 100%;
+    z-index:100;
+}
+.bg .planeBox .charactor1,
+.bg .planeBox .charactor2,
+.bg .planeBox .charactor3,
+.bg .planeBox .charactor4{
+    display: block;
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    z-index:999;
+}
+
+.bg .planeBox .charactor1{
+    left:0px;
+    top : 0px
+}
+.bg .planeBox .charactor2{
+    right:0px;
+    top : 300px;
+}
+.bg .planeBox .charactor3{
+    top : 0px;
+    left:30%
+}
+.bg .planeBox .charactor4{
+    bottom:0px;
+    right:30%;
+}
+.upperBox .arrange{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.upperBox .arrange li{
+    position: absolute;
+    right:0px;
+    width: 40px;
+}
+/* 特殊牌型的样式end */
